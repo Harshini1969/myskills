@@ -1,0 +1,120 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color:rgb(26, 25, 25);
+  color:white;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px; 
+  color:white;
+}
+
+/* Description below title */
+.description {
+  text-align: center;
+  font-size: 16px;
+  color:white;
+  width: 70%;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* Container for all skills */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Each skill block */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;    /*Two per row */
+}
+
+/* Text above bar */
+.info {
+   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Bar container */
+.a {
+  width: 100%;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Inner progress bar */
+.b {
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.text h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.html {
+     background-color:rgb(251, 116, 27);
+     }
+
+.css { 
+    background-color:rgb(27, 251, 217); 
+}
+.javascript {
+     background-color:rgb(88, 10, 243);  
+    }
+.react {
+     background-color:  rgb(38, 251, 27); 
+     }
+.mui {
+     background-color:  rgb(247, 251, 27); 
+    }
+.angular {
+     background-color: rgb(68, 27, 251); 
+     }
+.node {
+     background-color:  rgb(251, 116, 27); 
+     }
+.express {
+     background-color: rgb(10, 219, 251); 
+    }
+.mongodb { 
+    background-color:  rgb(251, 27, 236); 
+ }
+.java { 
+    background-color:  rgb(251, 68, 27); 
+ }
