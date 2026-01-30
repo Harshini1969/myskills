@@ -1,120 +1,101 @@
+/* Main container */
 .container {
-  width: 80%;
-  margin: 50px auto;
-  background-color:rgb(26, 25, 25);
-  color:white;
-  font-family: Arial, sans-serif;
+  padding: 60px 80px;
+  background-color: #f0f8ff; /* Background color */
+  text-align: center;
 }
 
-/* Title */
+/* Section title */
 .title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px; 
-  color:white;
 }
 
-/* Description below title */
+/* Description text */
 .description {
-  text-align: center;
+  max-width: 700px;
   font-size: 16px;
-  color:white;
-  width: 70%;
-  margin: 0 auto 40px auto;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #555;
+  margin: 0 auto 40px;
 }
 
-/* Container for all skills */
+/* Skills grid wrapper - 2 columns */
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 25px;
+  max-width: 700px;
+  margin: 0 auto; /* Center grid */
 }
 
-/* Each skill block */
+/* Make grid responsive on smaller screens */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr; /* Stack 1 column on small screens */
+  }
+}
+
+/* Individual skill block */
 .skill {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 45%;    /*Two per row */
+  width: 100%;
 }
 
-/* Text above bar */
+/* Skill name & percentage */
 .info {
-   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 
 .info h3 {
-  margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  color: #222;
 }
 
 .info p {
-  margin: 0;
   font-size: 14px;
   color: #555;
 }
 
-/* Bar container */
+/* Progress bar background */
 .a {
   width: 100%;
-  height: 20px;
-  background-color: white;
+  height: 8px;
+  background-color: #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
 }
 
-/* Inner progress bar */
+/* Progress bar fill */
 .b {
   height: 100%;
-  color: white;
+  background-color: #00c896;
   border-radius: 10px;
+  transition: width 0.6s ease;
 }
 
-.text {
-  width: 100%;
-  text-align: center;
-  margin-top: 5px;
+/* Optional individual colors */
+.b.html { background-color: #e34c26; }
+.b.css { background-color: #264de4; }
+.b.javascript { background-color: #f0db4f; }
+.b.react { background-color: #61dafb; }
+.b.node { background-color: #68a063; }
+.b.python { background-color: #306998; }
+.b.mongodb { background-color: #47a248; }
+.b.typescript { background-color: #3178c6; }
+
+.skill-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.text h1 {
-  font-size: 28px;
-  color: white;
+.skill-icon {
+  font-size: 18px;
+  color: #00c896;
 }
-
-.html {
-     background-color:rgb(251, 116, 27);
-     }
-
-.css { 
-    background-color:rgb(27, 251, 217); 
-}
-.javascript {
-     background-color:rgb(88, 10, 243);  
-    }
-.react {
-     background-color:  rgb(38, 251, 27); 
-     }
-.mui {
-     background-color:  rgb(247, 251, 27); 
-    }
-.angular {
-     background-color: rgb(68, 27, 251); 
-     }
-.node {
-     background-color:  rgb(251, 116, 27); 
-     }
-.express {
-     background-color: rgb(10, 219, 251); 
-    }
-.mongodb { 
-    background-color:  rgb(251, 27, 236); 
- }
-.java { 
-    background-color:  rgb(251, 68, 27); 
- }
